@@ -17,10 +17,26 @@ body {
   color: var(--body);
   line-height: 1.7;
 }
-a{
-    color: var(--dark);
-    text-decoration: none;
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+img {
+  width: 100%;
+}
+a {
+  color: var(--dark) !important;
+  transition: all 0.4s ease !important;
+  font-weight: 500 !important;
+  text-decoration: none;
+}
+
+/* a:hover {
+  color: var(--brand) !important;
+} */
+
 .top-nav {
   background-color: var(--brand);
   padding-bottom: 4px;
@@ -50,4 +66,32 @@ a{
 .social-icon a i:hover{
     background-color: white;
     color: var(--brand);
+}
+/* -------NAVBAR----- */
+.main-navbar .contact-btn{
+  background-color: var(--brand);
+  color: white;
+}
+.main-navbar .contact-btn:hover{
+  background-color: var(--brand);
+  border: var(--brand);
+  color: white;
+}
+
+.main-navbar .navbar-nav .nav-link.active, 
+.main-navbar .navbar-nav .nav-link:hover {
+ 
+  color: var(--brand) !important;
+}
+.main-navbar a.navbar-brand {
+  font-size: 30px;
+}
+.main-navbar .dot{
+  color: var(--brand);
+}
+.main-navbar{
+  box-shadow: var(--shadow);
+}
+.main-navbar .btn{
+  font-weight: 500;
 }
