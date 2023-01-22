@@ -18,9 +18,9 @@ body {
   line-height: 1.7;
 }
 .bg-cover {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 img {
@@ -31,6 +31,11 @@ a {
   transition: all 0.4s ease !important;
   font-weight: 500 !important;
   text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,
+.display-1,.display-2,.display-3,.display-4 {
+    font-weight: 700;
+    color: var(--dark);
 }
 
 /* a:hover {
@@ -68,11 +73,14 @@ a {
     color: var(--brand);
 }
 /* -------NAVBAR----- */
-.main-navbar .contact-btn{
-  background-color: var(--brand);
+.btn{
   color: white;
 }
-.main-navbar .contact-btn:hover{
+ .contact-btn{
+  background-color: var(--brand);
+
+}
+ .contact-btn:hover{
   background-color: var(--brand);
   border: var(--brand);
   color: white;
@@ -94,4 +102,46 @@ a {
 }
 .main-navbar .btn{
   font-weight: 500;
+}
+/* ------SLIDER---------- */
+.slide1{
+  background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(/img/bg_banner1.jpg
+  );
+  color: white;
+}
+.slide2{
+    background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(/img/bg_banner2.jpg
+    );
+    color: white;
+  }
+.slide1 .btn-outline-light :hover{
+color: black;
+}
+.our-slider .owl-stage {
+  width: 100% !important;
+}
+/* -----OWL-NAV------ */
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top:50%;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+}
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+background-color: var(--brand) !important;
+color: white !important;
+}
+.owl-prev{
+    left: 0;
+}
+.owl-next{
+    right: 0;
 }
