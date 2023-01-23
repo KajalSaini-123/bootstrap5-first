@@ -145,3 +145,7 @@ color: white !important;
 .owl-next{
     right: 0;
 }
+/* ------ABOUT---- */
+.about-info img {
+  width: 90px;
+}
