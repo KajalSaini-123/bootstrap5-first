@@ -37,11 +37,6 @@ h1,h2,h3,h4,h5,h6,
     font-weight: 700;
     color: var(--dark);
 }
-
-/* a:hover {
-  color: var(--brand) !important;
-} */
-
 .top-nav {
   background-color: var(--brand);
   padding-bottom: 4px;
@@ -148,4 +143,22 @@ color: white !important;
 /* ------ABOUT---- */
 .about-info img {
   width: 90px;
+}
+/* ------SUCCESS----- */
+#success{
+  padding: 80px 0;
+  background: linear-gradient(hsla(10deg 100% 58% / 90%),hsla(10deg 100% 58% / 90%)),url(/img/bg_banner1.jpg);
+
+}
+/* ------SERVICESS----- */
+.top-info h6{
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+.top-info h1{
+  font-weight: bold;
+}
+.top-info p{
+  max-width: 500px;
 }
