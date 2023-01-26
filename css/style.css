@@ -32,10 +32,18 @@ a {
   font-weight: 500 !important;
   text-decoration: none;
 }
-h1,h2,h3,h4,h5,h6,
-.display-1,.display-2,.display-3,.display-4 {
-    font-weight: 700;
-    color: var(--dark);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-weight: 700;
+  color: var(--dark);
 }
 .top-nav {
   background-color: var(--brand);
@@ -49,116 +57,193 @@ h1,h2,h3,h4,h5,h6,
   margin: 0 0 0 12px;
 }
 .top-nav i,
-.top-nav span{
-    vertical-align: middle;
+.top-nav span {
+  vertical-align: middle;
 }
-.social-icon a i{
-    width: 35px;
-    height: 34px;
-    background-color: rgba(255, 255, 255, 0.4);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    border-radius: 100%;
-    font-size: 18px;
+.social-icon a i {
+  width: 35px;
+  height: 34px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 100%;
+  font-size: 18px;
 }
-.social-icon a i:hover{
-    background-color: white;
-    color: var(--brand);
+.social-icon a i:hover {
+  background-color: white;
+  color: var(--brand);
 }
 /* -------NAVBAR----- */
-.btn{
+.btn {
   color: white;
 }
- .contact-btn{
+.contact-btn {
   background-color: var(--brand);
-
 }
- .contact-btn:hover{
+.contact-btn:hover {
   background-color: var(--brand);
   border: var(--brand);
   color: white;
 }
 
-.main-navbar .navbar-nav .nav-link.active, 
+.main-navbar .navbar-nav .nav-link.active,
 .main-navbar .navbar-nav .nav-link:hover {
- 
   color: var(--brand) !important;
 }
 .main-navbar a.navbar-brand {
   font-size: 30px;
 }
-.main-navbar .dot{
+.main-navbar .dot {
   color: var(--brand);
 }
-.main-navbar{
+.main-navbar {
   box-shadow: var(--shadow);
 }
-.main-navbar .btn{
+.main-navbar .btn {
   font-weight: 500;
 }
 /* ------SLIDER---------- */
-.slide1{
-  background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(/img/bg_banner1.jpg
-  );
+.slide1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/bg_banner1.jpg);
   color: white;
 }
-.slide2{
-    background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(/img/bg_banner2.jpg
-    );
-    color: white;
-  }
-.slide1 .btn-outline-light :hover{
-color: black;
+.slide2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/bg_banner2.jpg);
+  color: white;
+}
+.slide1 .btn-outline-light :hover {
+  color: black;
 }
 .our-slider .owl-stage {
   width: 100% !important;
 }
 /* -----OWL-NAV------ */
-
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev {
-    position: absolute;
-    top:50%;
-    background-color: rgba(255, 255, 255, 0.3) !important;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    font-size: 12px;
-    font-weight: 800;
-    color: white;
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  font-size: 12px;
+  font-weight: 800;
+  color: white;
 }
 .owl-carousel .owl-nav button.owl-next:hover,
 .owl-carousel .owl-nav button.owl-prev:hover {
-background-color: var(--brand) !important;
-color: white !important;
+  background-color: var(--brand) !important;
+  color: white !important;
 }
-.owl-prev{
-    left: 0;
+.owl-prev {
+  left: 0;
 }
-.owl-next{
-    right: 0;
+.owl-next {
+  right: 0;
 }
 /* ------ABOUT---- */
 .about-info img {
   width: 90px;
 }
 /* ------SUCCESS----- */
-#success{
+#success {
   padding: 80px 0;
-  background: linear-gradient(hsla(10deg 100% 58% / 90%),hsla(10deg 100% 58% / 90%)),url(/img/bg_banner1.jpg);
-
+  background: linear-gradient(
+      hsla(10deg 100% 58% / 90%),
+      hsla(10deg 100% 58% / 90%)
+    ),
+    url(/img/bg_banner1.jpg);
 }
 /* ------SERVICESS----- */
-.top-info h6{
+.top-info h6 {
   font-weight: 400;
   text-transform: uppercase;
   color: var(--brand);
 }
-.top-info h1{
+.top-info h1 {
   font-weight: bold;
 }
-.top-info p{
+.top-info p {
   max-width: 500px;
+}
+#services .box img {
+  width: 90px;
+}
+#services .box {
+  padding: 32px;
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+/* -----PROJECTS---------- */
+.project {
+  position: relative;
+}
+.project .overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 76, 41, 0) 0%,
+    var(--dark) 100%
+  );
+  position: absolute;
+  width: 100%;
+  height: 240px;
+  bottom: 0;
+  left: 0;
+}
+.project .text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 32px;
+}
+.project p:before {
+  content: "";
+  height: 2px;
+  width: 24px;
+  background: var(--brand);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+#portfolio .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #ff4d29 !important;
+}
+/* -------TEAM------- */
+.team-mate .image {
+  position: relative;
+  overflow: hidden;
+}
+.team-mate .overlay {
+  position: absolute;
+  top: -10%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s ease;
+  background-color: rgba(255, 77, 41, 0.7);
+  opacity: 0;
+}
+.team-mate :hover .overlay {
+  opacity: 1;
+  top: 0;
+}
+.team-mate .social-icon {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+}
+.team-mate:hover .social-icon {
+  top: 50%;
+  opacity: 1;
 }
