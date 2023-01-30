@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 :root {
+  --orange:#fd7e14;
   --brand: #ff4d29;
   --dark: #092032;
   --body: #516171;
@@ -246,4 +247,28 @@ h6,
 .team-mate:hover .social-icon {
   top: 50%;
   opacity: 1;
+}
+/* -----REVIEWS---- */
+#reviews .review img{
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+#reviews .review{
+  max-width: 760px;
+
+}
+#reviews{
+  padding: 90px 0 90px 0;
+  background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)),  url(/img/bg_banner1.jpg), #082032;;
+}
+#reviews .heading{
+  color: var(--brand);
+}
+#reviews .review .rating{
+color: var(--brand);
+}
+#reviews .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--brand);
 }

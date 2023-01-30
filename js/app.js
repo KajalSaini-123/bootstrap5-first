@@ -18,6 +18,7 @@ $("#first-slider").owlCarousel({
     },
   },
 });
+// ------PROJECT-SECTION-CAROUSAL------
 $("#projects-slider").owlCarousel({
   loop: true,
   margin: 0,
@@ -40,4 +41,14 @@ $("#projects-slider").owlCarousel({
       center: true,
     },
   },
+});
+// ---------REVIEW-SLIDER---------
+$("#review-slider").owlCarousel({
+  loop: true,
+  margin: 0,
+  items: 1,
+  dots: true,
+  smartSpeed: 1000,
+  autoplay: true,
+  autoplayTimeout: 3000,
 });
