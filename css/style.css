@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 :root {
-  --orange:#fd7e14;
+  --orange: #fd7e14;
   --brand: #ff4d29;
   --dark: #092032;
   --body: #516171;
@@ -249,26 +249,72 @@ h6,
   opacity: 1;
 }
 /* -----REVIEWS---- */
-#reviews .review img{
+#reviews .review img {
   width: 80px;
   height: 80px;
   border-radius: 100px;
   object-fit: cover;
 }
-#reviews .review{
+#reviews .review {
   max-width: 760px;
-
 }
-#reviews{
+#reviews {
   padding: 90px 0 90px 0;
-  background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)),  url(/img/bg_banner1.jpg), #082032;;
+  background: linear-gradient(
+      -90deg,
+      rgba(8, 32, 50, 0.8),
+      rgba(8, 32, 50, 0.8)
+    ),
+    url(/img/bg_banner1.jpg), #082032;
 }
-#reviews .heading{
+#reviews .heading {
   color: var(--brand);
 }
-#reviews .review .rating{
-color: var(--brand);
+#reviews .review .rating {
+  color: var(--brand);
 }
-#reviews .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+#reviews .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
   background: var(--brand);
+}
+/* -----BLOG---- */
+.blog-post {
+  position: relative;
+  box-shadow: var(--shadow);
+}
+.blog-post a {
+  position: absolute;
+  left: 6%;
+  top: 4%;
+  background-color: var(--brand);
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+.blog-post .blog-content small {
+  text-decoration: underline;
+  color: var(--brand);
+}
+/* ----FOOTER----- */
+footer {
+  padding: 50px 0;
+  background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)),
+    url(/img/bg_banner1.jpg), #082032;
+}
+footer .footer-content .footer-brand {
+  font-size: 35px;
+}
+footer .footer-content .footer-brand .dot {
+  color: var(--brand);
+}
+footer .footer-content p {
+  color: #adb3b9;
+  max-width: 550px;
+  margin: auto;
+}
+footer .footer-content .social-icon i {
+  padding: 25px;
+margin: 0 3px;
+}
+footer .footer-bottom{
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
