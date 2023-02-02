@@ -33,7 +33,7 @@
 
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
     <!-- NAVBAR -->
-    <div class="top-nav" id="home">
+    <div class="top-nav py-1" id="home">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-auto d-flex">
@@ -100,7 +100,12 @@
               <a class="nav-link" href="#blog">Blog</a>
             </li>
           </ul>
-          <button class="btn contact-btn px-3 ms-lg-3" type="submit">
+          <button
+            class="btn contact-btn px-3 ms-lg-3 shadow-none"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            type="submit"
+          >
             Contact
           </button>
         </div>
@@ -108,45 +113,46 @@
     </nav>
     <!-- ---SLIDER----- -->
     <section id="home">
-    <div class="owl-carousel owl-theme" id="first-slider">
-      <div class="slide1 min-vh-100 bg-cover d-flex align-items-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h6 class="text-uppercase fw-bold text-white">
-                We craft digital experiances
-              </h6>
-              <h1 class="text-uppercase my-3 fw-bold text-white display-2">
-                Design Driven For <br />Professionals
-              </h1>
-              <button href="" class="btn contact-btn">Get Started</button>
-              <button href="" class="btn btn-outline-light ms-3 px-4">
-                Our work
-              </button>
+      <div class="owl-carousel owl-theme" id="first-slider">
+        <div class="slide1 min-vh-100 bg-cover d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h6 class="text-uppercase fw-bold text-white">
+                  We craft digital experiances
+                </h6>
+                <h1 class="text-uppercase my-3 fw-bold text-white display-2">
+                  Design Driven For <br />Professionals
+                </h1>
+                <button href="" class="btn contact-btn">Get Started</button>
+                <button href="" class="btn btn-outline-light ms-3 px-4">
+                  Our work
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="slide2 min-vh-100 bg-cover d-flex align-items-center">
-        <div class="container d-flex justify-content-center">
-          <div class="row">
-            <div class="col-12 text-center">
-              <h6 class="text-uppercase fw-bold text-white">
-                design Driven for professional
-              </h6>
-              <h1 class="text-uppercase my-3 fw-bold text-white display-2">
-                We craft digital<br />experiances
-              </h1>
+        <div class="slide2 min-vh-100 bg-cover d-flex align-items-center">
+          <div class="container d-flex justify-content-center">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h6 class="text-uppercase fw-bold text-white">
+                  design Driven for professional
+                </h6>
+                <h1 class="text-uppercase my-3 fw-bold text-white display-2">
+                  We craft digital<br />experiances
+                </h1>
 
-              <button href="" class="btn contact-btn">Get Started</button>
-              <button href="" class="btn btn-outline-light ms-3 px-4">
-                Our work
-              </button>
+                <button href="" class="btn contact-btn">Get Started</button>
+                <button href="" class="btn btn-outline-light ms-3 px-4">
+                  Our work
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div></section>
+    </section>
     <!-- -----ABOUT------->
     <section id="about">
       <div class="container">
@@ -193,7 +199,8 @@
           </div>
 
           <div class="col-lg-5 mt-5">
-            <img src="./img/about.png" />
+            <div class="about-left">  <img src="./img/about.png" /></div>
+          
           </div>
         </div>
       </div>
@@ -202,19 +209,19 @@
     <section id="success" class="bg-cover my-5 py-5">
       <div class="container">
         <div class="row text-center justify-content-center text-white">
-          <div class="col-12 col-lg-2 col-sm-6">
+          <div class="col-12 col-lg-2 col-md-6 col-sm-6">
             <h4 class="display-4 text-white">90K+</h4>
             <p>Happy Clients</p>
           </div>
-          <div class="col-12 col-md-2 col-sm-6">
+          <div class="col-12 col-md-6 col-lg-2 col-sm-6">
             <h4 class="display-4 text-white">45M</h4>
             <p>Lines of code</p>
           </div>
-          <div class="col-12 col-md-2 col-sm-6">
+          <div class="col-12 col-md-6 col-lg-2 col-sm-6">
             <h4 class="display-4 text-white">190</h4>
             <p>Total Downloads</p>
           </div>
-          <div class="col-12 col-lg-2 col-sm-6">
+          <div class="col-12 col-lg-2 col-md-6 col-sm-6">
             <h4 class="display-4 text-white">380K</h4>
             <p>YouTube Subscribers</p>
           </div>
@@ -239,8 +246,8 @@
         </div>
       </div>
       <div class="container py-5">
-        <div class="row">
-          <div class="col-lg-4">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-4">
             <div class="box text-center">
               <img src="img/icon1.png" alt="icon1" class="mb-4" />
               <h5>Digital Marketing</h5>
@@ -250,7 +257,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4">
             <div class="box text-center">
               <img src="img/icon2.png" alt="icon2" class="mb-4" />
               <h5>Digital Marketing</h5>
@@ -260,7 +267,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4">
             <div class="box text-center">
               <img src="img/icon3.png" alt="icon3" class="mb-4" />
               <h5>Digital Marketing</h5>
@@ -349,8 +356,8 @@
             </div>
           </div>
         </div>
-        <div class="row text-center">
-          <div class="col-lg-4 col-md-8">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-4 col-md-4">
             <div class="team-mate">
               <div class="image">
                 <img src="./img/team_1.jpg" alt="team1" />
@@ -366,7 +373,7 @@
               <p>Ethical Hacker</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-8">
+          <div class="col-lg-4 col-md-4 ">
             <div class="team-mate">
               <div class="image">
                 <img src="./img/team_2.jpg" alt="team1" />
@@ -382,7 +389,7 @@
               <p>Software Developer</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-8">
+          <div class="col-lg-4 col-md-4 ">
             <div class="team-mate">
               <div class="image">
                 <img src="./img/team_3.jpg" alt="team1" />
@@ -571,6 +578,94 @@
         </div>
       </div>
     </footer>
+    <!-- ------MODAL----- -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-box">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-4 p-0">
+                  <div class="modal-img">
+                    <img src="img/c2.jpg" alt="img1" />
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="right-form p-4">
+                    <h1 class="mb-2">Get in touch</h1>
+                    <p>
+                      Fell free to contact us and we will get back to you as
+                      soon as possible
+                    </p>
+                    <form>
+                      <div class="row">
+                        <div class="col">
+                          <label for="name" class="form-label"
+                            >First name:</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control mb-3 border-0"
+                            placeholder="Enter name"
+                            name="name"
+                          />
+                        </div>
+                        <div class="col">
+                          <label for="name" class="form-label"
+                            >Last name:</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control mb-3 border-0"
+                            placeholder="Enter last name"
+                            name="name"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <label for="name" class="form-label"
+                            >Email address:</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control mb-3 border-0"
+                            placeholder="Enter email"
+                            name="email"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <label for="comment">Comments:</label>
+                          <textarea
+                            class="form-control mb-3 border-0"
+                            rows="3"
+                            id="comment"
+                            name="text"
+                            placeholder="Your Message"
+                          ></textarea>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn mt-2">
+                        Send Message
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

@@ -313,8 +313,36 @@ footer .footer-content p {
 }
 footer .footer-content .social-icon i {
   padding: 25px;
-margin: 0 3px;
+  margin: 0 3px;
 }
-footer .footer-bottom{
+footer .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* ------MODAL-BOX------- */
+.modal-box img {
+  min-height: 540px;
+}
+.modal-box input.form-control {
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.modal-box textarea.form-control {
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.modal-box .btn {
+  padding: 7px 15px;
+  background-color: var(--brand);
+}
+.modal-box :-ms-input-placeholder {
+  color: rgb(187, 181, 181);
+}
+/* ----RESPONSIVE----- */
+/* for tablets and large phone */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #about .about-left img {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
 }
